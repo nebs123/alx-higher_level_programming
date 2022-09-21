@@ -1,6 +1,4 @@
-#!/usr/bin/python3
-import py_compile
-import os
-name = os.getenv('PYFILE')
-print(f'Compiling {name} ...')
-py_compile.compile(name, cfile=name+'c')
+#!/bin/bash
+python3 -m py_compile $PYFILE
+mv __pycache__/* "${PYFILE}c"
+rm -r __pycache__
