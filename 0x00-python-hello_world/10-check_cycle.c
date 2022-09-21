@@ -8,13 +8,13 @@
  */
 int check_cycle(listint_t *list)
 {
-	int len = 0;
-	listint_t *ptr = list;
+	int len = 0, counter;
+	listint_t *ptr = list, *past;
 
 	while (ptr != NULL)
 	{
-		int counter = 0;
-		listint_t *past = list;
+		counter = 0;
+		past = list;
 
 		while (counter < len)
 		{
