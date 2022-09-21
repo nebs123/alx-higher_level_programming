@@ -9,3 +9,5 @@
 7-edges.py: uses string slicing to get desired output
 8-concat_edges.py: slices and concatenates string to print the desired output
 9-easter_egg.py: prints “The Zen of Python”, by TimPeters, followed by a new line.
+10-check-cycle: figure out if cycle exist
+100-write.py: use sys.stderr.write to write string to stderr output and exit with status code
