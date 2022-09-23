@@ -13,3 +13,5 @@
 11-pow.py: function that returns the power of a to b   
 12-fizzbuzz.py: function that prints Fizz, Buzz, or FizzBuzz for divdends of 3 and 5   
 13-insert_number.c: c function that inserst node into a sorted linked list    
+100-print_tebahpla.py: print alphabet in reverse order alternating between uppercase and lowercase letters    
+101-remove_char_at.py: function that creates a copy of string removing a character at n    
