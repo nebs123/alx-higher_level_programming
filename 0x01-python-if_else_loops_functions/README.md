@@ -12,3 +12,4 @@
 10-add.py: function that returns sum of two numbers    
 11-pow.py: function that returns the power of a to b   
 12-fizzbuzz.py: function that prints Fizz, Buzz, or FizzBuzz for divdends of 3 and 5   
+13-insert_number.c: c function that inserst node into a sorted linked list    
