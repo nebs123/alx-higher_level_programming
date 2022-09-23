@@ -15,3 +15,4 @@
 13-insert_number.c: c function that inserst node into a sorted linked list    
 100-print_tebahpla.py: print alphabet in reverse order alternating between uppercase and lowercase letters    
 101-remove_char_at.py: function that creates a copy of string removing a character at n    
+102-magic_calculation.py: determine code based of the Python bytecode   
