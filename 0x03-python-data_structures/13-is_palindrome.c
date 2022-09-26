@@ -43,6 +43,7 @@ int helper_palindrome(listint_t *head, size_t len)
 size_t list_len(listint_t *head)
 {
 	size_t len = 0;
+
 	while (head)
 	{
 		len++;
