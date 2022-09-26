@@ -11,4 +11,5 @@
 9-max_integer.py: function that returns max integer from list   
 10-divisible_by_2.py: function that returns a list of boolean if position in the input list is divisible by 2   
 11-delete_at.py: function that deletes element at given index from the list    
-12-switch.py: switch the values of a and b
+12-switch.py: switch the values of a and b    
+13-is_palindrome.c: check if linked list is a palindrome or not
