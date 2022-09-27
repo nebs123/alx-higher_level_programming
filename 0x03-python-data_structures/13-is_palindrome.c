@@ -45,6 +45,7 @@ int helper_palindrome(listint_t *head, size_t len)
 		left--;
 		right++;
 	}
+	free(arr);
 	return (1);
 }
 
