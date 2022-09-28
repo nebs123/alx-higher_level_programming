@@ -11,3 +11,6 @@
 9-multiply_by_2.py: create new dictionary with all values multiplied by 2    
 10-best_score.py: return key with biggest value from a dictionary    
 11-multiply_list_map.py: returns a list with values multiplied with a number(cannot use a loop)   
+100-weight_average.py: returns weighted average of tuple elements    
+101-square_matrix_map.py: like 0-square_matrix_simple.py but with a map     
+102-complex_delete.py: delete based on dictionary values
