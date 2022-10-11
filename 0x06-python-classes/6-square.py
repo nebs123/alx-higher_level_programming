@@ -47,6 +47,7 @@ class Square:
         """setter property for the attribute __position"""
 
         if type(position) != tuple or len(position) != 2 \
+           or type(position[0]) != int or type(position[1]) != int \
            or position[0] < 0 or position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = position
@@ -54,6 +55,10 @@ class Square:
     def my_print(self):
         """This method prints the square using hashtags # and adding
         spaces to offset for the position"""
+
+        if (self.size == 0):
+            print()
+            return
 
         for i in range(self.position[1]):
             print()
@@ -64,6 +69,4 @@ class Square:
                     print(" ", end="")
                 else:
                     print("#", end="")
-            print()
-        if (self.size == 0):
             print()
