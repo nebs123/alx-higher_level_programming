@@ -8,7 +8,7 @@ class Square:
     This class contains the attribute size
     """
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """This method intiializes the class Square and assignns size
         to a private field along with some constraints"""
 
@@ -55,10 +55,6 @@ class Square:
         """This method prints the square using hashtags # and adding
         spaces to offset for the position"""
 
-        if (self.size == 0):
-            print()
-            return
-
         for i in range(self.position[1]):
             print()
 
@@ -68,4 +64,6 @@ class Square:
                     print(" ", end="")
                 else:
                     print("#", end="")
+            print()
+        if (self.size == 0):
             print()
