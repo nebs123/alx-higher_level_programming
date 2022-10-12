@@ -8,3 +8,4 @@
 6-raise_exception_msg.py: raises a name exception with message     
 100-safe_print_integer_err.py: safely print integer and print error message when fail    
 101-safe_function.py: safely execute a function and return the result     
+102-magic_calculation.py: make function magic based on bytecode    
