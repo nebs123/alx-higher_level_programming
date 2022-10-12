@@ -5,4 +5,5 @@
 3-square.py: increments on previous class by adding a public area method     
 4-square.py: builds upon previous class and adds a property to handle retrieving/setting value of size     
 5-square.py: builds upon previous class and adds method to print the square with the hashes
-6-square.py: builds upon previous class by adding a position property and updating the method my_print
+6-square.py: builds upon previous class by adding a position property and updating the method my_print     
+100-singly_linked_list.py: write Node and SinglyLinkedList classes     
