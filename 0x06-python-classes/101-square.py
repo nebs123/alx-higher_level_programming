@@ -77,7 +77,6 @@ class Square:
 
         ret_str = ""
         if self.size == 0:
-            ret_str += "\n"
             return ret_str
 
         for i in range(self.position[1]):
