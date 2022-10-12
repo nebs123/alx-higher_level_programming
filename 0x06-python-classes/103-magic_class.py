@@ -5,13 +5,12 @@
 class MagicClass:
     """Class that is constructed based on bytecode"""
 
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         """Initalizer for the MagicClass"""
         self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
             raise TypeError('radius must be a number')
         self.__radius = radius
-
 
     def area(self):
         """Calculates the area of a Circle I think?!?!?!?"""
