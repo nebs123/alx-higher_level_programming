@@ -14,8 +14,10 @@ class MagicClass:
 
     def area(self):
         """Calculates the area of a Circle I think?!?!?!?"""
+        import math
         return self.__radius ** 2 * math.pi
 
     def circumference(self):
         """Calculates the circumference of a Circle I think"""
+        import math
         return 2 * math.pi * self.__radius
