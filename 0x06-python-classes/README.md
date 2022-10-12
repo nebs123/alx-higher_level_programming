@@ -7,3 +7,4 @@
 5-square.py: builds upon previous class and adds method to print the square with the hashes
 6-square.py: builds upon previous class by adding a position property and updating the method my_print     
 100-singly_linked_list.py: write Node and SinglyLinkedList classes     
+103-magic_class.py: create magic class based on bytecode output     
