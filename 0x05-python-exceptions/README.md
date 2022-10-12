@@ -6,3 +6,5 @@
 4-list_division.py: print first list by elements of second list     
 5-raise_exception.py: raises a type exception    
 6-raise_exception_msg.py: raises a name exception with message     
+100-safe_print_integer_err.py: safely print integer and print error message when fail    
+101-safe_function.py: safely execute a function and return the result     
