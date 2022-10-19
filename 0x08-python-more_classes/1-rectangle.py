@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""This is a module to hold the Rectangle class"""
+
 
 class Rectangle:
     """An Rectangle class with width and height property"""
