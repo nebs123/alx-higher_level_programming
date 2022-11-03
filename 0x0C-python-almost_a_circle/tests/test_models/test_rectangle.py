@@ -175,3 +175,45 @@ class TestRect(unittest.TestCase):
 
         r3 = Rectangle(2, 1, 0, 0, 25)
         self.assertEqual(str(r3), "[Rectangle] (25) 0/0 - 2/1")
+
+    def test_update(self):
+        """tests whether the method update works properly"""
+
+        r1 = Rectangle(10, 10, 10, 10, 1)
+        self.assertEqual(str(r1), "[Rectangle] (1) 10/10 - 10/10")
+
+        r1.update(89)
+        self.assertEqual(str(r1), "[Rectangle] (89) 10/10 - 10/10")
+
+        r1.update(89, 2)
+        self.assertEqual(str(r1), "[Rectangle] (89) 10/10 - 2/10")
+
+        r1.update(89, 2, 3)
+        self.assertEqual(str(r1), "[Rectangle] (89) 10/10 - 2/3")
+
+        r1.update(89, 2, 3, 4)
+        self.assertEqual(str(r1), "[Rectangle] (89) 4/10 - 2/3")
+
+        r1.update(89, 2, 3, 4, 5)
+        self.assertEqual(str(r1), "[Rectangle] (89) 4/5 - 2/3")
+
+    def test_update2(self):
+        """tests the revised version of update"""
+
+        r1 = Rectangle(10, 10, 10, 10, 1)
+        self.assertEqual(str(r1), "[Rectangle] (1) 10/10 - 10/10")
+
+        r1.update(10, id=15, width=1)
+        self.assertEqual(str(r1), "[Rectangle] (10) 10/10 - 10/10")
+
+        r1.update(height=1)
+        self.assertEqual(str(r1), "[Rectangle] (10) 10/10 - 10/1")
+
+        r1.update(width=1, x=2)
+        self.assertEqual(str(r1), "[Rectangle] (10) 2/10 - 1/1")
+
+        r1.update(y=1, width=2, x=3, id=89)
+        self.assertEqual(str(r1), "[Rectangle] (89) 3/1 - 2/1")
+
+        r1.update(x=1, height=2, y=3, width=4)
+        self.assertEqual(str(r1), "[Rectangle] (89) 1/3 - 4/2")
