@@ -77,7 +77,8 @@ class TestBase(unittest.TestCase):
         self.assertEqual(Base.from_json_string(None), [])
         self.assertEqual(Base.from_json_string(""), [])
 
-        l1 = [{"id": 12, "width": 5, "height": 12}, {"size": 12, "x": 3, "y": 4}]
+        l1 = [{"id": 12, "width": 5, "height": 12}, {"size": 12, "x": 3,
+                                                     "y": 4}]
         self.assertEqual(l1, Base.from_json_string(Base.to_json_string(l1)))
 
         l1 = [{}, {}]
