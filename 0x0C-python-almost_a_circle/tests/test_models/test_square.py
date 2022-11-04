@@ -191,3 +191,17 @@ class TestSquare(unittest.TestCase):
 
         s1.update(size=7, id=89, y=1)
         self.assertEqual(str(s1), "[Square] (89) 12/1 - 7")
+
+    def test_square_to_dict(self):
+        """Tests the to_dictionary method of Square class"""
+
+        r1 = Square(10, 2, 1, 9)
+        self.assertEqual(r1.to_dictionary(), {'x': 2, 'y': 1, 'id': 9,
+                                              'size': 10})
+        r2 = Square(5, 3, 2, 2)
+        self.assertEqual(r2.to_dictionary(), {'x': 3, 'y': 2, 'id': 2,
+                                              'size': 5})
+        r2.update(**r1.to_dictionary())
+        self.assertEqual(r2.to_dictionary(), r1.to_dictionary())
+        self.assertEqual(str(r2), "[Square] (9) 2/1 - 10")
+        self.assertFalse(r1 == r2)
